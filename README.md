@@ -1,1 +1,1 @@
-platform-one-sand.vercel.app
+https://platform-one-sand.vercel.app/
