@@ -1,0 +1,90 @@
+$backGroundColor: #ffffff;
+$greenBorderColor: #52c41a;
+$blackBorderColor: #000000bf;
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: $backGroundColor;
+  margin: 0 22px;
+
+  .toMainButton {
+    all: unset;
+    cursor: pointer;
+  }
+
+  .websiteName {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: 'Inter UI', sans-serif;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+
+    .createArticleButton {
+      border: 1px solid $greenBorderColor;
+      border-radius: 5px;
+      padding: 5px 10px;
+      color: $greenBorderColor;
+      font-size: 14px;
+      line-height: 22px;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+    }
+
+    .logoutButton {
+      border: 1px solid $blackBorderColor;
+      border-radius: 5px;
+      padding: 6px 18px;
+      color: $blackBorderColor;
+      font-size: 18px;
+      line-height: 28px;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+    }
+
+    .profileButton {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+      cursor: pointer;
+
+      img {
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+      }
+    }
+
+    button {
+      all: unset;
+      font-size: 18px;
+      line-height: 28px;
+      font-family: 'Inter UI', sans-serif;
+      background-color: $backGroundColor;
+      border: none;
+    }
+
+    .signInButton {
+      border: none;
+      padding: 0 14px;
+      height: 35px;
+    }
+
+    .signUpButton {
+      border: 1px solid $greenBorderColor;
+      padding: 10px 22px;
+      height: 51px;
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+  }
+  .gaps {
+    gap: 26px;
+  }
+}

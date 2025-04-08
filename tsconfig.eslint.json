@@ -1,0 +1,12 @@
+// tsconfig.eslint.json я создаел его сам специально для линтинга. Он "расширяет" основной конфиг (или tsconfig.app.json). В нём ты точно говоришь: линть
+// эти файлы, используй эти пути, вот базовые опции.
+
+{
+  "extends": "./tsconfig.app.json",
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx", "vite.config.ts"]
+}
+
+// "extends" тянет все опции из tsconfig.app.json (а там всё уже правильно).
+
+
+// "include" говорит ESLint: линть все .ts, .tsx, .js, .jsx в папке src.

@@ -1,0 +1,177 @@
+$backgroundColor: #ebeef3;
+$sectionsColor: #ffffff;
+$titleColor: #1890ff;
+$dateColor: #00000080;
+$textColorSecondary: #00000080;
+
+$buttonTextColor: #ffffff;
+$addButtonColor: #1890ff;
+
+$editButtonColor: #52c41a;
+$deleteButtonColor: #f5222d;
+
+h1 {
+  margin-top: 0;
+}
+
+.mainContainer {
+  background-color: $backgroundColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  min-height: 100vh;
+  padding: 26px 0;
+
+  article {
+    background-color: $sectionsColor;
+    width: 938px;
+    position: relative;
+    padding: 15px 15px 24px 15px;
+    max-width: 908px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    section {
+      width: 100%;
+
+      .headerContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .topicContainer {
+          display: flex;
+          flex-wrap: wrap;
+          .topicName {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            h2 {
+              margin: 0;
+              max-width: 500px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              color: $titleColor;
+              font-size: 20px;
+              line-height: 28px;
+              font-family: 'Inter', sans-serif;
+              font-weight: 400;
+            }
+            .likeButton {
+              all: unset;
+              margin: 0;
+              display: flex;
+              align-items: center;
+              font-size: 12px;
+              line-height: 22px;
+              font-family: 'Inter', sans-serif;
+              height: 22px;
+              cursor: pointer;
+
+              img {
+                display: flex;
+                width: 16px;
+                height: 16px;
+                margin-right: 5px;
+              }
+            }
+          }
+          .tagsContainer {
+            padding: 0;
+            margin: 4px 0 0 0;
+            list-style: none;
+            display: flex;
+            gap: 8px;
+            width: 100%;
+            font-size: 12px;
+            line-height: 100%;
+            font-family: 'Inter', sans-serif;
+            overflow: scroll;
+            scrollbar-width: none;
+
+            li {
+              height: 20px;
+              box-sizing: border-box;
+              border: 1px solid black;
+              border-radius: 2px;
+              padding: 3px 5px;
+              min-width: fit-content;
+              color: $textColorSecondary;
+            }
+          }
+        }
+      }
+
+      .shortenDescriptionContainer {
+        width: 100%;
+        gap: 71px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 16px;
+        margin-bottom: 25px;
+
+        .shortenDescription {
+          color: $textColorSecondary;
+          margin: 0;
+          font-size: 12px;
+          line-height: 22px;
+          font-family: 'Inter', sans-serif;
+
+          word-break: break-word;
+        }
+
+        .articleActions {
+          display: flex;
+          gap: 12px;
+
+          .editButton {
+            background-color: $buttonTextColor;
+            color: $editButtonColor;
+            border: 1px solid $editButtonColor;
+            padding: 6px 19px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 65px;
+            height: 31px;
+            white-space: nowrap;
+            box-sizing: border-box;
+            margin: 0;
+          }
+
+          .deleteButton {
+            background-color: $buttonTextColor;
+            color: $deleteButtonColor;
+            border: 1px solid $deleteButtonColor;
+            padding: 6px 17px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 78px;
+            height: 31px;
+            box-sizing: border-box;
+            white-space: nowrap;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .bodyDescription {
+      p {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+        line-height: 28px;
+        margin: 0;
+        word-break: break-word;
+        color: rgba($textColorSecondary, 0.75);
+      }
+
+      h2 {
+        margin: 16px 0;
+      }
+    }
+  }
+}

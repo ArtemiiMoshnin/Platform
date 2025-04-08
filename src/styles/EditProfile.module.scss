@@ -1,0 +1,96 @@
+$labelColor: #262626;
+$checkBoxLabelColor: #595959;
+$buttonTextlColor: #ffffff;
+$signInTextlColor: #8c8c8c;
+$backgroundColor: #ebeef3;
+$errordColor: #f5222d;
+
+.error {
+  color: $errordColor;
+  margin: 0;
+  display: flex;
+  margin-top: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.editProfileMain {
+  background-color: $backgroundColor;
+  height: 100vh;
+  padding-top: 59px;
+
+  .container {
+    width: 384px;
+    background: #fff;
+    padding: 48px 33px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .title {
+      font-size: 20px;
+      line-height: 28px;
+      margin: 0;
+      margin-bottom: 21px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        text-align: left;
+        font-size: 14px;
+        line-height: 22px;
+        font-family: 'Roboto', sans-serif;
+        color: $labelColor;
+        margin-top: 12px;
+        margin-bottom: 2px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+        &:last-child {
+          margin: 0;
+        }
+      }
+
+      input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Roboto', sans-serif;
+        //   margin-bottom: 12px;
+
+        &:focus {
+          border-color: #007bff;
+          outline: none;
+        }
+      }
+    }
+
+    .button {
+      background: #007bff;
+      color: $buttonTextlColor;
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: 'Roboto', sans-serif;
+      // margin-bottom: 8px;
+      margin-top: 21px;
+
+      &:hover {
+        background: #0056b3;
+      }
+    }
+  }
+}
